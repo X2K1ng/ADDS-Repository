@@ -10,7 +10,7 @@ int main() {
     Referee referee;
 
     // Play the game and get the result
-    Player* winner = referee.judgeWinner(&humanPlayer, &computerPlayer);
+    Player* winner = referee.refGame(&humanPlayer, &computerPlayer);
 
     // Print the result
     if (winner == nullptr) {
