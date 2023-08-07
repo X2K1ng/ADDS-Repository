@@ -5,6 +5,6 @@ class Referee
 {
 private:
 public:
-    Player* judgeWinner(Player* player1, Player* player2);
+    Player* refGame(Player* player1, Player* player2);
 };
 #endif

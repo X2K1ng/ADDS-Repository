@@ -82,8 +82,39 @@ string Zombie::getName()
     return "Zombie";
 }
 
-bool Paper::beats(Move* opponentMove)
+bool Zombie::beats(Move* opponentMove)
 {
     string opponentName = opponentMove->getName();
     return opponentName == "Pirate" || opponentName == "Monkey";
 }
+Rock::Rock() {}
+
+Rock::~Rock() {}
+
+Paper::Paper() {}
+
+Paper::~Paper() {}
+
+Scissors::Scissors() {}
+
+Scissors::~Scissors() {}
+
+Monkey::Monkey() {}
+
+Monkey::~Monkey() {}
+
+Robot::Robot() {}
+
+Robot::~Robot() {}
+
+Pirate::Pirate() {}
+
+Pirate::~Pirate() {}
+
+Ninja::Ninja() {}
+
+Ninja::~Ninja() {}
+
+Zombie::Zombie() {}
+
+Zombie::~Zombie() {}
