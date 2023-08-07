@@ -9,3 +9,5 @@ Move* Computer::makeMove()
 {
     return new Rock();
 }
+
+Computer::Computer() {}
