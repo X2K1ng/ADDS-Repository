@@ -5,7 +5,7 @@
 
 int main() {
     // Create the players and referee
-    Human humanPlayer();
+    Human humanPlayer;
     Computer computerPlayer;
     Referee referee;
 
