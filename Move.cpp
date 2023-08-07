@@ -8,7 +8,13 @@ string Rock::getName()
 bool Rock::beats(Move* opponentMove)
 {
     string opponentName = opponentMove->getName();
-    return opponentName == "Scissors" || opponentName == "Zombie";
+    if (opponentName == "Scissors" || opponentName == "Zombie")
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 string Paper::getName()
@@ -19,7 +25,13 @@ string Paper::getName()
 bool Paper::beats(Move* opponentMove)
 {
     string opponentName = opponentMove->getName();
-    return opponentName == "Robot" || opponentName == "Ninja";
+    if (opponentName == "Robot" || opponentName == "Ninja")
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 string Scissors::getName()
@@ -30,7 +42,13 @@ string Scissors::getName()
 bool Scissors::beats(Move* opponentMove)
 {
     string opponentName = opponentMove->getName();
-    return opponentName == "Pirate" || opponentName == "Zombie";
+    if (opponentName == "Pirate" || opponentName == "Zombie")
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 string Monkey::getName()
@@ -41,7 +59,13 @@ string Monkey::getName()
 bool Monkey::beats(Move* opponentMove)
 {
     string opponentName = opponentMove->getName();
-    return opponentName == "Robot" || opponentName == "Ninja";
+    if (opponentName == "Robot" || opponentName == "Ninja")
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 string Robot::getName()
@@ -52,7 +76,13 @@ string Robot::getName()
 bool Robot::beats(Move* opponentMove)
 {
     string opponentName = opponentMove->getName();
-    return opponentName == "Zombie" || opponentName == "Ninja";
+    if (opponentName == "Zombie" || opponentName == "Ninja")
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 string Pirate::getName()
@@ -63,7 +93,13 @@ string Pirate::getName()
 bool Pirate::beats(Move* opponentMove)
 {
     string opponentName = opponentMove->getName();
-    return opponentName == "Robot" || opponentName == "Ninja";
+    if (opponentName == "Robot" || opponentName == "Ninja")
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 string Ninja::getName()
@@ -74,7 +110,13 @@ string Ninja::getName()
 bool Ninja::beats(Move* opponentMove)
 {
     string opponentName = opponentMove->getName();
-    return opponentName == "Pirate" || opponentName == "Zombie";
+    if (opponentName == "Pirate" || opponentName == "Zombie")
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 string Zombie::getName()
@@ -85,7 +127,13 @@ string Zombie::getName()
 bool Zombie::beats(Move* opponentMove)
 {
     string opponentName = opponentMove->getName();
-    return opponentName == "Pirate" || opponentName == "Monkey";
+    if (opponentName == "Pirate" || opponentName == "Monkey")
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 Rock::Rock() {}
 
