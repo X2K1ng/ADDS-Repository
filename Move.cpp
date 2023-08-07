@@ -87,3 +87,11 @@ bool Zombie::beats(Move* opponentMove)
     string opponentName = opponentMove->getName();
     return opponentName == "Pirate" || opponentName == "Monkey";
 }
+Rock::Rock() : Move("Rock") {}
+Scissors::Scissors() : Move("Scissors") {}
+Paper::Paper() : Move("Paper") {}
+Monkey::Monkey() : Move("Monkey") {}
+Robot::Robot() : Move("Robot") {}
+Ninja::Ninja() : Move("Ninja") {}
+Pirate::Pirate() : Move("Pirate") {}
+Zombie::Zombie() : Move("Zombie") {}
