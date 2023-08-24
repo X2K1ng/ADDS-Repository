@@ -13,7 +13,7 @@
                 result.push_back(found);
                 startPoint = found;
             } else {
-                for (size_t j = i; j < s2.size(); j++) {
+                for (size_t j = i; j <= s2.size(); j++) {
                     result.push_back(-1);
                 }
                 return result;
