@@ -11,7 +11,7 @@
             size_t found = s1.find(s2.substr(0,i), startPoint);
             if (found != string::npos) { //npos - string has no postition
                 result.push_back(found);
-                startPoint = result.back();
+                startPoint = found;
             } else {
                 for (size_t j = i; j < s2.size(); j++) {
                     result.push_back(-1);
