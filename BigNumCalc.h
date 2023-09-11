@@ -4,11 +4,11 @@
 #include <list>
 #include <string>
 
-class bigNumCalc {
+class BigNumCalc {
 public:
     // Constructors & Destructor
-    bigNumCalc() = default;
-    ~bigNumCalc() = default;
+    BigNumCalc() = default;
+    ~BigNumCalc() = default;
 
     // Member functions
     std::list<int> buildBigNum(const std::string& numString);
