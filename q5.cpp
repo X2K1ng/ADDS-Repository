@@ -25,6 +25,11 @@ Rectangle::~Rectangle()
 
 
 int main(){
-    
+    Rectangle *rectPtr = nullptr;
+    rectPtr = new Rectangle();
+    rectPtr->length=5;
+    rectPtr->width=23;
+    cout << "length: " << rectPtr->length << ", width: " << rectPtr->width << endl;
+    delete rectPtr;
     return 0;
 }
