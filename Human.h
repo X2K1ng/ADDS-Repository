@@ -15,23 +15,5 @@ public:
     char makeMove() override;
     ~Human();
 };
-string Human::getName()
-{
-    return name;
-}
-
-char Human::makeMove()
-{
-    char move = NULL;
-    cout<<"Enter move: ";
-    cin >> move;
-    return move;
-}
-
-Human::Human(string n): name(n) {}
-
-Human::~Human()
-{
-}
 
 #endif
