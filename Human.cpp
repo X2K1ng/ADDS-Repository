@@ -18,7 +18,8 @@ char Human::makeMove()
 }
 
 Human::Human(string n): name(n) {}
-
+Human::Human()
+{}
 Human::~Human()
 {
 }

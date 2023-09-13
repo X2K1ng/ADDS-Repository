@@ -13,6 +13,7 @@ public:
     Human(string n);
     string getName() override;
     char makeMove() override;
+    Human();
     ~Human();
 };
 
