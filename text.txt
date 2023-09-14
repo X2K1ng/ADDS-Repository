@@ -1,0 +1,214 @@
+Question 1
+
+What is the tightest complexity that describes the following code fragment?
+
+ 
+
+int sum1 = 0;
+
+int sum2 = 0;
+
+for (int i = 1; i < n; i = i*4) {
+
+                sum1++;
+
+                sum2++;                
+
+ }
+
+Choose from:
+
+O(log n)
+
+O(n^2)
+
+O(n)
+
+O(n^4)
+
+Question 2:
+
+What is the tightest complexity that describes the following code fragment?
+
+ 
+
+int sum = 0;
+
+for (int i=0; i < n; i++) {
+
+      for (int j=0; j < n; j++) {
+
+            if(i != j) {
+
+                    sum++;
+
+            }
+
+      }
+
+}
+
+Choose from:
+
+O(log n)
+
+O(n^2)
+
+O (n)
+
+O(n log n)
+
+Question 3:
+
+What is the tightest complexity that describes the following code fragment?
+
+ 
+
+int sum = 0;
+
+for (int i=0; i < n; i++) {
+
+      for (int j=0; j < i*i; j++) {
+
+            if(i == j) {
+
+                    for (int k = 0; k < n; k++) {
+
+                          sum++;
+
+                    }
+
+            }
+
+      }
+
+}
+
+Choose from:
+
+O(n)
+
+O(n^4)
+
+O(n^2)
+
+O(n^3)
+
+Question 4:
+
+Which statements are correct?  (Multiple answers)
+
+Choose from:
+
+if f(n)=(BigO)(g(n)), then f(n)=O(g(n)).
+
+n^2=o(n^2)
+
+Big O and Little o are upper bound notations.
+
+Ω denotes the best case complexity.
+
+If f(n)=o(g(n)), then f(n)=O(g(n)).
+
+Big O is a tight bound notation.
+
+If f(n)=o(g(n)) and g(n)=o(h(n)), then f(n)=o(h(n)).
+
+If f(n)=Ω(g(n)), then g(n)=O(f(n)).
+
+If f(n)=O(g(n)), then f(n)=o(g(n)).
+
+n^3 = Ω(n^4)
+
+Question 5:
+
+Order the following formulas from slowest (1) to fastest (8) growth rate.
+n*log(n^3)
+(1.5)^n
+log(n^2)
+log^2(n)
+4^n
+n!
+n^2+n
+n^{0.5}+1
+
+Question 6:
+
+Find a, b and d master theorem parameters for the following code:
+
+ 
+
+int f(int n) {
+
+
+     if (n < 2) return 0;
+
+ 
+
+     int sum = 0;
+
+ 
+
+     for (int i = 0; i < n; i++) {
+          sum++;
+
+     }
+
+ 
+
+     return f(n/2) + 2f(n/2) + sum;
+}
+
+Question 7:
+
+Find a, b and d master theorem parameters for the binary search algorithm.
+
+Question 8:
+
+Which sorting algorithms provide computational complexity O(n log n) in average case.
+
+Selection sort
+
+Bubble sort
+
+Insertion sort
+
+Merge sort
+
+Quick sort
+
+Question 9:
+
+Which of the following statements are true about linked lists.
+
+Select all that apply.
+
+Which of the following statements are true about linked lists.
+
+Select all that apply:
+
+Linked lists utilise contiguous memory.
+
+Inserting a node at back of a singly linked list with head and tail pointers can be done in O(1).
+
+Linked lists can be more SPACE efficient than C++ vectors in situations where we repeatedly add elements.
+
+Deleting a node from back of a singly linked list with head and tail pointers can be done in O(1).
+
+The time complexity for inserting a node at the beginning of a singly linked list is O(1).
+
+
+Question 10:
+
+
+Your task is to complete the implementation of the functions of a linked list class. The positions of nodes are defined as 0 through n-1, where n is the number of nodes in the list.
+
+Complete the implementation of the following two functions to their respective specifications.
+
+    bool swap(int pos1, int pos2) - swaps the data at positions pos1 and pos2 then returns true. [12 marks]
+        If a or b are out-of-bounds, return false without swapping any elements.
+    bool find_and_delete(int target) - searches the list for a node containing target, which then deletes it and returns true. [9 marks]
+        If target appears multiple times in the list, delete the first occurrence.
+        If target does not exist in the list return false.
+
+Download, edit, and submit the following files: LinkedList.cpp, LinkedList.h, Node.cpp, Node.h
